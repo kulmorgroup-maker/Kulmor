@@ -1,0 +1,68 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="680" rx="36" fill="#FCFBFC"/>
+  <path d="M0 0H1200V680H0V0Z" fill="url(#backgroundGlow)"/>
+  <g opacity="0.45">
+    <path d="M78 183C110 161 159 156 193 168C220 177 247 191 275 194C314 198 348 180 388 182C435 184 475 219 522 224C553 228 586 219 617 224C658 232 693 260 735 264C774 267 812 247 850 248C896 249 938 280 983 292C1028 304 1086 297 1130 320V449C1086 449 1042 444 999 452C955 459 915 479 870 477C825 476 785 455 740 450C690 444 641 454 591 450C533 446 476 430 418 428C349 425 280 440 212 431C160 424 112 403 78 370V183Z" fill="#E7E2EA"/>
+    <path d="M162 229C185 215 216 214 241 223C266 232 287 252 314 258C335 262 358 258 379 263C408 270 432 293 461 300C494 308 530 304 562 314C587 321 609 339 635 343C664 349 696 340 725 348C747 354 764 369 786 375C823 386 864 381 901 391C936 401 969 425 1005 431C1045 438 1086 426 1125 440V499C1092 503 1059 506 1027 518C988 531 955 555 913 558C875 561 838 548 800 546C760 544 719 549 680 539C647 530 618 510 586 499C550 486 511 476 473 475C426 474 379 489 332 487C284 486 237 469 189 467C146 465 104 476 63 492V338C90 303 123 253 162 229Z" fill="#DCD6E2"/>
+    <path d="M927 178C952 166 984 163 1011 170C1030 176 1046 189 1065 194C1090 201 1118 197 1142 206C1160 213 1175 226 1187 242V336C1174 343 1159 346 1145 347C1118 349 1092 342 1065 341C1031 340 996 347 963 339C934 332 911 311 881 306C851 301 820 309 790 305C764 301 741 287 731 262C722 240 732 212 751 196C769 180 796 175 822 177C856 180 890 195 924 189L927 178Z" fill="#E5E0E8"/>
+    <path d="M103 409C137 390 178 384 215 391C244 396 268 414 296 422C329 431 364 429 397 438C424 445 447 461 474 469C509 480 547 480 582 488C618 495 649 516 683 527C718 539 756 541 791 550C812 556 831 567 852 572H680C635 572 590 571 545 572C487 573 429 579 372 568C321 558 274 530 222 524C176 519 131 531 85 526V428C90 420 96 413 103 409Z" fill="#E9E4EC"/>
+  </g>
+
+  <g opacity="0.3" stroke="#D7D0DB">
+    <path d="M90 110H1110"/>
+    <path d="M90 190H1110"/>
+    <path d="M90 270H1110"/>
+    <path d="M90 350H1110"/>
+    <path d="M90 430H1110"/>
+    <path d="M90 510H1110"/>
+    <path d="M160 90V580"/>
+    <path d="M320 90V580"/>
+    <path d="M480 90V580"/>
+    <path d="M640 90V580"/>
+    <path d="M800 90V580"/>
+    <path d="M960 90V580"/>
+  </g>
+
+  <path d="M330 387C439 276 622 237 770 281C819 296 857 320 896 343" stroke="#6E0280" stroke-width="6" stroke-linecap="round" stroke-dasharray="15 18"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="319" cy="396" r="23" fill="#6E0280"/>
+    <path d="M319 432C345 432 366 412 366 386C366 360 345 339 319 339C293 339 272 360 272 386C272 412 293 432 319 432Z" fill="white" fill-opacity="0.2"/>
+    <circle cx="319" cy="396" r="8" fill="white"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <circle cx="911" cy="303" r="23" fill="#6E0280"/>
+    <path d="M911 339C937 339 958 319 958 293C958 267 937 246 911 246C885 246 864 267 864 293C864 319 885 339 911 339Z" fill="white" fill-opacity="0.2"/>
+    <circle cx="911" cy="303" r="8" fill="white"/>
+  </g>
+
+  <g>
+    <rect x="236" y="454" width="140" height="54" rx="18" fill="white"/>
+    <rect x="236.5" y="454.5" width="139" height="53" rx="17.5" stroke="#E5DDE9"/>
+    <text x="260" y="488" fill="#6E0280" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Tampa</text>
+  </g>
+
+  <g>
+    <rect x="828" y="186" width="154" height="54" rx="18" fill="white"/>
+    <rect x="828.5" y="186.5" width="153" height="53" rx="17.5" stroke="#E5DDE9"/>
+    <text x="852" y="220" fill="#6E0280" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">Albania</text>
+  </g>
+
+  <defs>
+    <filter id="shadow" x="0" y="0" width="1200" height="680" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="12"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.431373 0 0 0 0 0.00784314 0 0 0 0 0.501961 0 0 0 0.22 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <radialGradient id="backgroundGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(825 108) rotate(119.165) scale(679.866 1200.4)">
+      <stop stop-color="#F0E7F2"/>
+      <stop offset="1" stop-color="#FCFBFC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
