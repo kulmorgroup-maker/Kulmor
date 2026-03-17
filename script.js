@@ -1,23 +1,6 @@
 const menuButton = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 
-document.querySelectorAll("img[data-fallback-src]").forEach((image) => {
-  image.addEventListener("error", () => {
-    const fallbackSrc = image.getAttribute("data-fallback-src");
-    const fallbackApplied = image.getAttribute("data-fallback-applied") === "true";
-
-    if (fallbackSrc && !fallbackApplied) {
-      image.setAttribute("data-fallback-applied", "true");
-      image.src = fallbackSrc;
-      return;
-    }
-
-    if (image.alt === "Kulmor Group logo") {
-      image.style.display = "none";
-    }
-  });
-});
-
 if (menuButton && siteNav) {
   const closeMenu = () => {
     menuButton.classList.remove("is-open");
