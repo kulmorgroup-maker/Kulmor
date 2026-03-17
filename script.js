@@ -1,9 +1,20 @@
 const menuButton = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 
-document.querySelectorAll('img[src="assets/kulmor_logo_refurbished.png"]').forEach((logo) => {
-  logo.addEventListener("error", () => {
-    logo.style.display = "none";
+document.querySelectorAll("img[data-fallback-src]").forEach((image) => {
+  image.addEventListener("error", () => {
+    const fallbackSrc = image.getAttribute("data-fallback-src");
+    const fallbackApplied = image.getAttribute("data-fallback-applied") === "true";
+
+    if (fallbackSrc && !fallbackApplied) {
+      image.setAttribute("data-fallback-applied", "true");
+      image.src = fallbackSrc;
+      return;
+    }
+
+    if (image.alt === "Kulmor Group logo") {
+      image.style.display = "none";
+    }
   });
 });
 
@@ -41,7 +52,23 @@ if (menuButton && siteNav) {
   });
 }
 
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+const normalizedPath = window.location.pathname.replace(/\/+$/, "");
+const currentPage = (() => {
+  const lastSegment = normalizedPath.split("/").pop() || "index.html";
+  if (!lastSegment || lastSegment === "") {
+    return "index.html";
+  }
+
+  if (lastSegment.endsWith(".html")) {
+    return lastSegment;
+  }
+
+  if (lastSegment === "index") {
+    return "index.html";
+  }
+
+  return `${lastSegment}.html`;
+})();
 document.querySelectorAll(".site-nav a[data-page]").forEach((link) => {
   if (link.getAttribute("data-page") === currentPage) {
     link.classList.add("is-active");
