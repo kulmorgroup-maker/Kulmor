@@ -68,7 +68,7 @@ const formStatus = document.querySelector("#form-status");
 if (contactForm && formStatus) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formStatus.textContent = "Thanks for reaching out. This demo form does not send yet, so please email hello@kulmorgroup.com or book a consultation.";
+    formStatus.textContent = "Thanks for reaching out. This demo form does not send yet, so please email kulmorgroup@gmail.com or book a consultation.";
     contactForm.reset();
   });
 }
